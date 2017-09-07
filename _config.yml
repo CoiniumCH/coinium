@@ -3,6 +3,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-menus
+  - jekyll-assets
+  - bootstrap
 
 url: "https://coinium.ch"
 baseurl: ""
