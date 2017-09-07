@@ -1,0 +1,3 @@
+# Coinium
+
+Die Coinommunity
