@@ -9,7 +9,11 @@ rvm: 2.3
 before_script:
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   - sudo apt-get install nodejs
+  - npm install -g gulp@3.9.1
 
 script:
   - npm install
+  - gulp
+
   - bundle install
+  - bundle exec jekyll build
