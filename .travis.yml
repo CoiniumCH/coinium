@@ -14,17 +14,4 @@ rvm: 2.3
 before_script:
   - npm install -g gulp@3.9.1
 
-script:
-  - npm install
-  - gulp
-
-  - bundle install
-  - bash jekyll-build.sh
-
-  - docker build -t coinium/coinium .
-
-after_success:
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - bash docker-push.sh
-
-  - curl "https://ci.dini-mueter.net/buildByToken/build?job=deploy.coinium&token=$BUILD_TOKEN&cause=Container%20build"
+script: ./ci-build.sh

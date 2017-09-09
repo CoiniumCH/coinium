@@ -13,7 +13,7 @@ baseurl: ""
 title: Coinium
 
 #Default keywords (used if no keywords are specified on a page basis)
-keywords: test1, test2, etc
+keywords: Kryptowährung, Kryptowährungen, Bitcoin, Etherum, Litecoin, Cryptocurrency
 
 # Short description of your site
 desc: Die Coinommunity
@@ -87,7 +87,7 @@ defaults:
     scope:
       path: "wiki"
     values:
-      layout: "wiki"
+      layout: "wiki_entry"
   - scope:
       path: ""
       type: waehrung
@@ -105,6 +105,12 @@ exclude:
   - assets
   - node_modules
   - vendor
+  - ci-build.sh
+  - Dockerfile
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - nginx.conf
 
 created-by: Coinium
 creator-url: https://coinium.ch

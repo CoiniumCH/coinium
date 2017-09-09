@@ -4,7 +4,7 @@ symbol: BTC
 creator: Satoshi Nakamoto
 creation_year: 2007
 ---
-Der Bitcoin ist die älteste aller Digitalwährungen. Sie wurde im Jahr 2007 von Satoshi Nakamoto erfunden.
+Der Bitcoin ist die älteste aller Digitalwährungen und wird auch als das digitale Gold bezeichnet. Sie wurde im Jahr 2007 von Satoshi Nakamoto erfunden.
 
 Mit dem Bitcoin wurde der Begriff und die Technologie der Block Chain eingeführt. Bitcoin Transaktionen werden dezentral gespeichert. Manipulationen sind somit fast bis ganz unmöglich.
 
