@@ -64,6 +64,11 @@ kramdown:
 permalink: /blog/:title
 paginate: 5
 
+collections:
+  waehrung:
+    output: true
+    permalink: /:collection/:name
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -83,6 +88,13 @@ defaults:
       path: "wiki"
     values:
       layout: "wiki"
+  - scope:
+      path: ""
+      type: waehrung
+    values:
+      layout: waehrung
+      creator: Unbekannt
+      creation_year: Unbekannt
 
 # Exclude these files from production site
 exclude:

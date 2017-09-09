@@ -1,0 +1,13 @@
+---
+title: Währungen
+---
+
+<h1>Währungen</h1>
+
+<ul>
+{% for waehrung in site.waehrung %}
+    <li>
+        <a href="{{ waehrung.url }}">{{ waehrung.symbol }} - {{ waehrung.title }}</a>
+    </li>
+{% endfor %}
+</ul>

@@ -31,6 +31,16 @@ h3, h4, h5 {
   }
 }
 
+.waehrung {
+  aside {
+    float: right;
+    width: 20em;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+}
+
 footer {
   background-color: #f9f9f9;
 }

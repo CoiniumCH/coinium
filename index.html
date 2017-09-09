@@ -10,15 +10,10 @@ layout: default
     <article>
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h4 class="postTitle">{{ post.title }}</h4>
-            {% if post.subtitle %}
-                <h3 class="postSubTitle">
-                    {{ post.subtitle }}
-                </h3>
-            {% endif %}
         </a>
 
-        <p class="postMeta">
-            Erstellt am {{ post.date | date: "%d.%m.%Y" }} von {{ post.author }}.
+        <p class="text-muted">
+            <small>Erstellt am {{ post.date | date: "%d.%m.%Y" }} von {{ post.author }}.</small>
         </p>
 
         <div>
