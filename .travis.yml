@@ -17,3 +17,5 @@ script:
 
   - bundle install
   - bundle exec jekyll build
+
+  - docker build -t coinium/coinium .
