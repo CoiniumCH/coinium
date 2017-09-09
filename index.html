@@ -4,22 +4,18 @@ layout: default
 
 <h1>Coinium.ch <small>Die Coinommunity</small></h1>
 
-<h3>Aktuelle Blogposts:</h3>
+<p>Coinium ist ein schweizer Projekt, dass möglichst viele und leicht verständliche Informationen zu Bitcoin und alternativen Kryptowährungen zusammen trägt.</p>
 
 <div class="posts-list">
+    <h3>Aktuelle Blogposts:</h3>
     {% for post in paginator.posts %}
     <article>
         <a href="{{ post.url | prepend: site.baseurl }}">
-            <h2 class="postTitle">{{ post.title }}</h2>
-            {% if post.subtitle %}
-                <h3 class="postSubTitle">
-                    {{ post.subtitle }}
-                </h3>
-            {% endif %}
+            <h4 class="postTitle">{{ post.title }}</h4>
         </a>
 
-        <p class="postMeta">
-            Erstellt: {{ post.date | date: "%d.%m.%Y" }}
+        <p class="text-muted">
+            <small>Erstellt am {{ post.date | date: "%d.%m.%Y" }} von {{ post.author }}.</small>
         </p>
 
         <div>
@@ -28,21 +24,23 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}" class="readMoreLink">&raquo; [Weiterlesen]</a>
         </div>
 
+        <hr />
     </article>
     {% endfor %}
-</div>
 
-{% if paginator.total_pages > 1 %}
+    {% if paginator.total_pages > 1 %}
     <ul class="pager main-pager">
         {% if paginator.previous_page %}
-            <li class="previous">
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Neuere Posts</a>
-            </li>
-        {% endif %} 
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Neuere Posts</a>
+        </li>
+        {% endif %}
         {% if paginator.next_page %}
-            <li class="next">
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Ältere Posts &rarr;</a>
-            </li>
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Ältere Posts &rarr;</a>
+        </li>
         {% endif %}
     </ul>
-{% endif %}
+    {% endif %}
+</div>
+

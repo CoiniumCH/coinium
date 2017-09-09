@@ -3,6 +3,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-menus
+  - jekyll-assets
+  - bootstrap
 
 url: "https://coinium.ch"
 baseurl: ""
@@ -11,7 +13,7 @@ baseurl: ""
 title: Coinium
 
 #Default keywords (used if no keywords are specified on a page basis)
-keywords: test1, test2, etc
+keywords: Kryptowährung, Kryptowährungen, Bitcoin, Etherum, Litecoin, Cryptocurrency
 
 # Short description of your site
 desc: Die Coinommunity
@@ -62,6 +64,14 @@ kramdown:
 permalink: /blog/:title
 paginate: 5
 
+collections:
+  waehrung:
+    output: true
+    permalink: /:collection/:name
+  glossar:
+    output: true
+    permalink: /:collection/:name
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -80,7 +90,21 @@ defaults:
     scope:
       path: "wiki"
     values:
-      layout: "wiki"
+      layout: "wiki_entry"
+  -
+    scope:
+      path: ""
+      type: waehrung
+    values:
+      layout: waehrung
+      creator: Unbekannt
+      creation_year: Unbekannt
+  -
+    scope:
+      path: ""
+      type: glossar
+    values:
+      layout: "wiki_entry"
 
 # Exclude these files from production site
 exclude:
@@ -88,6 +112,24 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - assets
+  - node_modules
+  - vendor
+  - ci-build.sh
+  - Dockerfile
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - nginx.conf
 
 created-by: Coinium
 creator-url: https://coinium.ch
+
+assets:
+  prefix: "/assets"
+  assets:
+    - "*.png"
+    - "css/styles.css"
+    - "js/*.js"
+  sources:
+    - "_assets/"

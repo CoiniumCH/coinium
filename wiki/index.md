@@ -1,23 +1,44 @@
 ---
 title: Coinium Wiki
+layout: wiki
 ---
 
 # Herzlich Willkommen im Wiki
 
-{% assign url_parts = page.url | split: '/' %}
-{% assign url_parts_size = url_parts | size %}
-{% assign rm = url_parts | last %}
-{% assign base_url = page.url | replace: rm %}
+Wir wünschen dir viel Spass beim Lesen.
 
-<ul>
-{% for node in site.pages %}
-  {% if node.url contains base_url %}
-    {% assign node_url_parts = node.url | split: '/' %}
-    {% assign node_url_parts_size = node_url_parts | size %}
-    {% assign filename = node_url_parts | last %}
-    {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-      <li><a href='{{node.url}}'>{{node.title}}</a></li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+<div class="row">
+    <div class="col-sm-12 col-md-4">
+        <strong>Häufig gestellte Fragen</strong>
+        <ul>
+            <li>
+                <a href="glossar/wallet.html">Was ist ein Wallet?</a>
+            </li>
+            <li>
+                <a href="faq/was-sind-icos.html">Was sind ICOs?</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-12 col-md-4">
+            <strong>Trading</strong>
+            <ul>
+                <li>
+                    <a href="trading/baeren-und-bullen.html">Von Bären und Bullen</a>
+                </li>
+                <li>
+                    <a href="trading/lending.html">Lending</a>
+                </li>
+            </ul>
+        </div>
+    <div class="col-sm-12 col-md-4">
+        <strong>Community</strong>
+        <ul>
+            <li>
+                <a href="https://slack.coinium.ch">Slack-Chat</a>
+            </li>
+            <li>
+                <a href="https://t.me/coinium_ch">Telegram-Chat (Schweizer-Deutsch)</a>
+            </li>
+        </ul>
+    </div>
+</div>

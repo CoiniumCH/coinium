@@ -1,0 +1,18 @@
+sudo: required
+
+addons:
+  apt:
+    packages:
+    - nodejs
+
+services:
+  - docker
+
+language: ruby
+rvm: 2.3
+
+before_script:
+  - npm install -g gulp@3.9.1
+
+script:
+  - bash ./ci-build.sh

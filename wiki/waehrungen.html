@@ -1,0 +1,15 @@
+---
+title: Währungen
+desc: Eine Übersicht über viele Kryptowährungen.
+layout: wiki
+---
+
+<h1>Währungensübersicht</h1>
+
+<ul>
+{% for waehrung in site.waehrung %}
+    <li>
+        <a href="{{ waehrung.url }}">{{ waehrung.symbol }} - {{ waehrung.title }}</a>
+    </li>
+{% endfor %}
+</ul>

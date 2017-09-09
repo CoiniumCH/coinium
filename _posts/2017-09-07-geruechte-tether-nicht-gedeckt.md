@@ -2,7 +2,7 @@
 layout: post
 title: 'Gerüchte: Dollar Tether (USDT) möglicherweise nicht gedeckt!'
 date: '2017-09-07'
-author: Erhardt, Simon
+author: Simon Erhardt
 categories:
 - Gerüchte
 tags:

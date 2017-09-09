@@ -1,0 +1,46 @@
+@import 'bootstrap_custom';
+
+h1, h2 {
+  margin-top: 10px
+}
+
+h3, h4, h5 {
+  margin-top: 5px;
+}
+
+.container,
+.container-fluid {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  margin: 10px 0;
+}
+
+.posts-list {
+  margin-top: 10px;
+
+  article {
+    margin: 10px 0;
+
+    .readMoreLink {
+      display: block;
+      text-align: right;
+    }
+  }
+}
+
+.waehrung {
+  aside {
+    float: right;
+    width: 20em;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  background-color: #f9f9f9;
+}

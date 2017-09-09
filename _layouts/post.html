@@ -5,30 +5,25 @@ comments: true
 
 <div class="row">
     <div class="col-md-8">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="text-primary">{{ page.title }}</h3>
-                <span class="text-muted"><small>Erstellt: {{ page.date | date: "%d.%m.%Y" }}</small></span>
-            </div>
-            <div class="panel-body">
-                {{ content }}
-            </div>
+        <article>
+            <h1>{{ page.title }}</h1>
+            <span class="text-muted"><small>Erstellt am {{ page.date | date: "%d.%m.%Y" }} von {{ page.author }}.</small></span>
 
-            <div class="panel-footer">
-                <ul class="pager blog-pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top"
-                        title="{{page.previous.title}}">&larr; Vorheriger Beitrag</a>
-                    </li>
-                    {% endif %} {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Nächster Beitrag &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-            </div>
-        </div>
+            {{ content }}
+
+            <ul class="pager blog-pager">
+                {% if page.previous.url %}
+                <li class="previous">
+                    <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top"
+                       title="{{page.previous.title}}">&larr; Vorheriger Beitrag</a>
+                </li>
+                {% endif %} {% if page.next.url %}
+                <li class="next">
+                    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Nächster Beitrag &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+        </article>
 
         {% if page.comments %}
         <div class="panel panel-default">
@@ -40,22 +35,23 @@ comments: true
     </div>
 
     <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span class="text-primary"><b>Aktuelle Beiträge</b></span>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    {% for post in site.posts offset: 0 limit: 5  %}
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Aktuelle Beiträge</h4>
+                <p class="card-text">
+                    <ul>
+                        {% for post in site.posts offset: 0 limit: 5  %}
                         <li>
                             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                         </li>
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </p>
             </div>
         </div>
 
-        <div class="panel panel-default">
+
+        <!--div class="panel panel-default">
             <div class="panel-heading">
                 <span class="text-primary"><b>Kategorien</b></span>
             </div>
@@ -64,12 +60,12 @@ comments: true
                     {% for category in site.categories %}
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h5 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" 
                                    href="#{{ category | first }}">
                                     {{ category | first }}
                                 </a>
-                            </h4>
+                            </h5>
                         </div>
                         
                         {% if forloop.index == 1 %}
@@ -102,14 +98,14 @@ comments: true
                     {% endfor %}
                 </div>
             </div>
-        </div>
-        
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span class="text-primary"><b>Disclaimer</b></span>
-            </div>
-            <div class="panel-body">
-                Die Meinungen in diesem Blog stellen die persönliche Sicht des Autors dar. Sie stellen keine Handlungsempfehlungen dar.
+        </div-->
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Disclaimer</h4>
+                <p class="card-text">
+                    Die Meinungen in diesem Blog stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
+                </p>
             </div>
         </div>
     </div>
