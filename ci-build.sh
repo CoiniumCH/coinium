@@ -15,6 +15,8 @@ fi
 
 docker build -t coinium/coinium .
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+    docker login -u=${DOCKER_USERNAME} -p=${DOCKER_PASSWORD}
+
 	if [ "${TRAVIS_BRANCH}" != "master" ]; then
         # re-tag docker image
         docker tag coinium/coinium coinium/coinium:${TRAVIS_BRANCH}
