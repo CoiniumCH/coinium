@@ -27,4 +27,4 @@ after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - bash docker-push.sh
 
-  - curl "https://ci.dini-mueter.net/buildByToken/build?token=$BUILD_TOKEN&cause=Container%20build"
+  - curl "https://ci.dini-mueter.net/buildByToken/build?job=deploy.coinium&token=$BUILD_TOKEN&cause=Container%20build"
