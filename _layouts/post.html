@@ -40,22 +40,23 @@ comments: true
     </div>
 
     <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span class="text-primary"><b>Aktuelle Beiträge</b></span>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    {% for post in site.posts offset: 0 limit: 5  %}
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Aktuelle Beiträge</h4>
+                <p class="card-text">
+                    <ul>
+                        {% for post in site.posts offset: 0 limit: 5  %}
                         <li>
                             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                         </li>
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </p>
             </div>
         </div>
 
-        <div class="panel panel-default">
+
+        <!--div class="panel panel-default">
             <div class="panel-heading">
                 <span class="text-primary"><b>Kategorien</b></span>
             </div>
@@ -102,14 +103,14 @@ comments: true
                     {% endfor %}
                 </div>
             </div>
-        </div>
-        
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span class="text-primary"><b>Disclaimer</b></span>
-            </div>
-            <div class="panel-body">
-                Die Meinungen in diesem Blog stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
+        </div-->
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Disclaimer</h4>
+                <p class="card-text">
+                    Die Meinungen in diesem Blog stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
+                </p>
             </div>
         </div>
     </div>
