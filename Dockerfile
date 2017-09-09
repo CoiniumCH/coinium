@@ -4,7 +4,7 @@ FROM node:6 as assets
 COPY . /tmp/coinium
 WORKDIR /tmp/coinium
 
-RUN npm install -g gulp
+RUN npm install -g gulp@3.9.1
 
 ## Webpage
 FROM ruby:2 as webpage

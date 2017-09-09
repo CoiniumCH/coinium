@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+jobs:
+  includes:
+    - language: node_js
+      node_js: 6
+      script:
+        - npm install
+
+    - language: ruby
+      rvm: 2.3
+      script:
+        - bundle install

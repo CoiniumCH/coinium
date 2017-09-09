@@ -90,6 +90,16 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - assets
+  - node_modules
 
 created-by: Coinium
 creator-url: https://coinium.ch
+
+assets:
+  prefix: "/assets"
+  assets:
+    - "*.png"
+    - "css/styles.css"
+  sources:
+    - "_assets/"
