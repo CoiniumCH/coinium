@@ -67,10 +67,10 @@ paginate: 5
 collections:
   waehrung:
     output: true
-    permalink: /wiki/:collection/:name
+    permalink: /:collection/:name
   glossar:
     output: true
-    permalink: /wiki/:collection/:name
+    permalink: /:collection/:name
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
