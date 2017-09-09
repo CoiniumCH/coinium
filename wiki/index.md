@@ -5,10 +5,15 @@ layout: wiki
 
 # Herzlich Willkommen im Wiki
 
+Wir wünschen dir viel Spass beim Lesen.
+
 <div class="row">
     <div class="col-sm-12 col-md-4">
         <strong>Häufig gestellte Fragen</strong>
         <ul>
+            <li>
+                <a href="glossar/wallet.html">Was ist ein Wallet?</a>
+            </li>
             <li>
                 <a href="faq/was-sind-icos.html">Was sind ICOs?</a>
             </li>

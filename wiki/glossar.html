@@ -1,0 +1,14 @@
+---
+title: Glossar
+layout: wiki
+---
+
+<h1>Begriffsübersicht</h1>
+
+<ul>
+{% for glossar in site.glossar %}
+    <li>
+        <a href="{{ glossar.url }}">{{ glossar.title }}</a>
+    </li>
+{% endfor %}
+</ul>
