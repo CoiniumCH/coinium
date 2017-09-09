@@ -20,6 +20,9 @@ layout: wiki
                 <li>
                     <a href="trading/baeren-und-bullen.html">Von Bären und Bullen</a>
                 </li>
+                <li>
+                    <a href="trading/lending.html">Lending</a>
+                </li>
             </ul>
         </div>
     <div class="col-sm-12 col-md-4">
