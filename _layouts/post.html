@@ -7,8 +7,8 @@ comments: true
     <div class="col-md-8">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="text-primary">{{ page.title }}</h3>
-                <span class="text-muted"><small>Erstellt: {{ page.date | date: "%d.%m.%Y" }}</small></span>
+                <h1 class="text-primary">{{ page.title }}</h1>
+                <span class="text-muted"><small>Erstellt am {{ page.date | date: "%d.%m.%Y" }} von {{ page.author }}.</small></span>
             </div>
             <div class="panel-body">
                 {{ content }}
@@ -64,12 +64,12 @@ comments: true
                     {% for category in site.categories %}
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h5 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" 
                                    href="#{{ category | first }}">
                                     {{ category | first }}
                                 </a>
-                            </h4>
+                            </h5>
                         </div>
                         
                         {% if forloop.index == 1 %}
@@ -109,7 +109,7 @@ comments: true
                 <span class="text-primary"><b>Disclaimer</b></span>
             </div>
             <div class="panel-body">
-                Die Meinungen in diesem Blog stellen die persönliche Sicht des Autors dar. Sie stellen keine Handlungsempfehlungen dar.
+                Die Meinungen in diesem Blog stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
             </div>
         </div>
     </div>
