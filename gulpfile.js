@@ -5,11 +5,12 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var del = require('del');
-var minifyJS = require('gulp-minify');
 
 var paths = {
     scripts: [
-        './node_modules/bootstrap/js/src/*.js',
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/popper.js/dist/umd/popper.js',
+        './node_modules/bootstrap/dist/js/bootstrap.js',
         './assets/js/*.js'
     ],
     sass: './assets/scss/*.scss'
@@ -27,8 +28,7 @@ gulp.task('scripts', ['clean'], function() {
     // Minify and copy all JavaScript (except vendor scripts)
     // with sourcemaps all the way down
     return gulp.src(paths.scripts)
-        .pipe(minifyJS())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('./_assets/js'));
 });
@@ -41,7 +41,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./_assets/css'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['scripts','sass'], function() {
     gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.sass, ['sass']);
 });
