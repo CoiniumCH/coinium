@@ -11,4 +11,5 @@ before_script:
   - sudo apt-get install nodejs
 
 script:
+  - npm install
   - bundle install
