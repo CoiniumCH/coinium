@@ -92,6 +92,7 @@ exclude:
   - README.md
   - assets
   - node_modules
+  - vendor
 
 created-by: Coinium
 creator-url: https://coinium.ch
