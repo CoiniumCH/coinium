@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+set -x
 
 if [ "${TRAVIS_BRANCH}" != "master" ]; then
     # re-tag docker image

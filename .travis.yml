@@ -19,7 +19,7 @@ script:
   - gulp
 
   - bundle install
-  - bundle exec jekyll build
+  - bash jekyll-build.sh
 
   - docker build -t coinium/coinium .
 
