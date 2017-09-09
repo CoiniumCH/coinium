@@ -1,5 +1,10 @@
 sudo: required
 
+addons:
+  apt:
+    packages:
+    - nodejs
+
 services:
   - docker
 
@@ -7,8 +12,6 @@ language: ruby
 rvm: 2.3
 
 before_script:
-  - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-  - sudo apt-get install nodejs
   - npm install -g gulp@3.9.1
 
 script:
@@ -22,4 +25,4 @@ script:
 
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push coinium/coinium
+  - bash docker-build.sh

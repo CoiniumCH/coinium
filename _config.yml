@@ -102,5 +102,6 @@ assets:
   assets:
     - "*.png"
     - "css/styles.css"
+    - "js/*.js"
   sources:
     - "_assets/"

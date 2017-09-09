@@ -5,9 +5,11 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var del = require('del');
+var minifyJS = require('gulp-minify');
 
 var paths = {
     scripts: [
+        './node_modules/bootstrap/js/src/*.js',
         './assets/js/*.js'
     ],
     sass: './assets/scss/*.scss'
@@ -25,7 +27,8 @@ gulp.task('scripts', ['clean'], function() {
     // Minify and copy all JavaScript (except vendor scripts)
     // with sourcemaps all the way down
     return gulp.src(paths.scripts)
-        .pipe(uglify())
+        .pipe(minifyJS())
+        //.pipe(uglify())
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('./_assets/js'));
 });
