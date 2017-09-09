@@ -19,3 +19,7 @@ script:
   - bundle exec jekyll build
 
   - docker build -t coinium/coinium .
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push coinium/coinium
