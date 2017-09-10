@@ -1,32 +1,20 @@
 # Coinium
 
-Die Coinommunity
+Die schweizer Krypto-Informationsplattform. Hier findest du viele Informationen zum Thema "Kryptowährungen".
 
-## Entwicklung
+Die Webseite findest du unter [Coinium.ch](https://conium.ch). 
 
-Dieses Projekt verwenden [Jekyll](http://jekyllrb.com) zum Erstellen statischer Webseiten.
-
-### Vorraussetzung
- * Ruby 2.3
- * Nodejs 6 und NPM
- * Gulp (npm install -g gulp)
-
-### Vorbereitung Development Environment
- * `npm install # NodeJS Abhängigkeiten installieren`
- * `bundle install # Ruby Abhängikeiten installieren`
- * `gulp watch # JavaScript und Styles builden`
- * `bundle exec jekyll serve # Jekyll Server starten`
- * Browser öffnen und nach [localhost:4000](http://localhost:4000) navigieren
- 
-### Besondere Verzeichnisse
- * **_waehrung**: In diesem Verzeichnisse werden neue Währungen angelegt
- * **_glossar**: Hier können Glossareinträge abgelegt werden.
- 
 ## Mitmachen
 
 Coinium ist ein Open-Source Projekt und wir freuen uns jederzeit über Pull-Requests.
 
 Bitte beachte, dass du mit dem Erstellen eines Pull-Requests, dich damit einverstanden erklärst, dass deine Arbeit unter der **Creative Commons 4.0 Attribution Share-Alike International**-Lizenz veröffentlicht wird.
+
+-> [Weitere Informationen](https://coinium.ch/about/mitmachen)
+
+## Entwicklung
+
+-> [Zur Entwickler-Dokumentation](https://coinium.ch/about/mitmachen)
 
 ## Lizenz
 

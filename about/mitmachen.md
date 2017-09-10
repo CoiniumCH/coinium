@@ -1,0 +1,63 @@
+---
+title: Mitmachen
+---
+
+<a rel="nofollow" href="https://github.com/CoiniumCH/coinium"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+# Mitmachen
+
+Coinium ist ein Open-Source Projekt und wir freuen uns jederzeit über Pull-Requests. Sämtlicher Code, der zum Erstellen dieser Webseite notwendig ist, kann auf [Github](https://github.com/CoiniumCH/coinium) gefunden werden. 
+
+Wenn du bei diesem Projekt mitmachst, erklärst du dich damit einverstanden, dass deine Arbeit unter die **Creative Commons 4.0 Attribution Share-Alike International** gestellt wird. Arbeit, welche dieser Lizenz nicht genügt können wir leider nicht annehmen.
+
+## Lizenz
+
+Dieses Projekt verwendet die **Creative Commons 4.0 Attribution Share-Alike International**-Lizenz. 
+
+Du darfst:
+ * **Teilen** — das Material in jedwedem Format oder Medium vervielfältigen und weiterverbreiten
+ * **Bearbeiten** — das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
+ 
+Unter folgenden Bedingungen:
+ * **Namensnennung** — Du musst angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade dich oder deine Nutzung besonders.
+ * **Weitergabe unter gleichen Bedingungen** — Wenn Du das Material remixst, veränderst oder anderweitig direkt darauf aufbaust, darfst du deine Beiträge nur unter derselben Lizenz wie das Original verbreiten.
+ * **Keine weiteren Einschränkungen** — Du darfst keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.
+ 
+Die rechtlich gültige Version befindet sich in der [LICENSE.md](https://github.com/CoiniumCH/coinium/blob/master/LICENSE.md)-Datei.
+
+## Entwicklerdokumentation
+
+Dieses Projekt verwendet [Jekyll](http://jekyllrb.com) zum Erstellen statischer Webseiten. Dort findest sich auch eine gute Dokumentation.
+ 
+Sämtliche Änderungen werden automatisch von [Travis CI](https://travis-ci.org) gebaut und je nach Branch direkt ausgerollt.
+
+### Vorraussetzung/Abhängigkeiten
+ * Ruby 2.3
+ * Nodejs 6 und NPM
+ * Gulp (npm install -g gulp)
+
+### Vorbereitung Entwicklungsumgebung
+ * `npm install # NodeJS Abhängigkeiten installieren`
+ * `bundle install # Ruby Abhängikeiten installieren`
+ * `gulp watch # JavaScript und Styles builden`
+ * `bundle exec jekyll serve # Jekyll Server starten`
+ * Browser öffnen und nach [localhost:4000](http://localhost:4000) navigieren
+ 
+### Komponenten
+
+Diese Webseite benutzt diverse Komponenten und Frameworks:
+
+ * [jQuery](http://jquery.com) 2
+ * [Popper.js](https://popper.js.org) 1
+ * Twitter [Bootstrap](http://getbootstrap.com) 4
+
+### Besondere Verzeichnisse
+ * **img**: Hier werden Bilder abgelegt.
+ * **_waehrung**: In diesem Verzeichnisse werden neue Währungen angelegt.
+ * **_glossar**: Hier können Glossareinträge abgelegt werden.
+ 
+### Besondere Templates
+ * **_includes/nav.html**: Hauptnavigation
+ * **_includes/wiki_nav.html**: Hier liegt die Wiki-Navigation.
+ * **_layouts/wiki_entry.html**: Darstellung eines Wiki-Artikels.
+ * **_layouts/waehrung.html**: Darstellung einer Währungsseite.
