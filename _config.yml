@@ -20,7 +20,7 @@ desc: Die schweizer Krypto-Informationsplattform
 
 algolia:
   application_id: '9CSM7E3ECT'
-  index_name: 'coinium-dev'
+  index_name: 'coinium'
   excluded_files:
     - index.html
   settings:
@@ -30,6 +30,8 @@ algolia:
       - h2
       - h3
       - p
+
+  read_only_api_key: cbf38e4186918edd9ee123a559e989f8
 
 feed:
   path: atom.xml

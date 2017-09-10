@@ -25,6 +25,11 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
         docker push coinium/coinium
     fi
 
+    if [ "${TRAVIS_BRANCH}" = "master" ]; then
+        export ALGOLIA_INDEX_NAME="coinium"
+        bundle exec jekyll algolia push
+    fi
+
     if [ "${TRAVIS_BRANCH}" = "develop" ]; then
         export ALGOLIA_INDEX_NAME="coinium-dev"
         bundle exec jekyll algolia push
