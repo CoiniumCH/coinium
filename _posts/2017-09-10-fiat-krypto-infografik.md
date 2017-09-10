@@ -11,6 +11,6 @@ tags:
 ---
 Coinium-Admin "Cerritus" hat eine schöne Infografik zum Vergleich von Fiat-Geld mit Kryptowährungen erstellt:
 
-<img class="img-fluid" src="/img/info/fiat_vs_kryptowaehrung.png"></a>
+<img class="img-fluid" src="/img/info/fiat_vs_kryptowaehrung.png">
 
 Ihr dürft diese Grafik gerne auf anderen Webseiten einbinden, wenn ihr einen Backlink setzt.
