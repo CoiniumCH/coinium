@@ -23,12 +23,9 @@ group :jekyll_plugins do
    gem "jekyll-paginate", "~> 1.1"
    gem 'jekyll-sitemap', '~> 1.1', '>= 1.1.1'
    gem "jekyll-menus", "~> 0.6.0"
+   gem "algoliasearch-jekyll", "~> 0.8.2"
+   gem "jekyll-assets", "~> 2.3"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'bootstrap', '~> 4.0.0.alpha6'
-
-# Added at 2017-09-07 22:04:57 +0200 by simu:
-gem "jekyll-assets", "~> 2.3"

@@ -25,5 +25,10 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
         docker push coinium/coinium
     fi
 
+    if [ "${TRAVIS_BRANCH}" = "develop" ]; then
+        export ALGOLIA_INDEX_NAME="coinium-dev"
+        bundle exec jekyll algolia push
+    fi
+
     curl "https://ci.dini-mueter.net/buildByToken/build?job=deploy.coinium&token=${BUILD_TOKEN}&cause=Container%20build"
 fi

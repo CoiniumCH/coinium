@@ -4,7 +4,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-menus
   - jekyll-assets
-  - bootstrap
+  - algoliasearch-jekyll
 
 url: "https://coinium.ch"
 baseurl: ""
