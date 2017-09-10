@@ -43,13 +43,6 @@ feed:
   path: atom.xml
 
 avatar: "/img/apple-touch-icon.png"
-
-# List of links in the navigation bar
-nav-links:
-  Home: ""
-  Wiki: "wiki"
-  Mitmachen: "about/mitmachen"
-  Über Coinium: "about"
   
 # --- Footer options --- #
 

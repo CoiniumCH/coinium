@@ -9,11 +9,18 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      {% for link in site.nav-links %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/{{ link[1] }}">{{ link[0] }}</a>
+      <li>
+        <a class="nav-link" href="{{ site.baseurl }}/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
       </li>
-      {% endfor %}
+      <li>
+        <a class="nav-link" href="{{ site.baseurl }}/wiki"><i class="fa fa-book" aria-hidden="true"></i> Wiki</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{{ site.baseurl }}/about/mitmachen"><i class="fa fa-users" aria-hidden="true"></i> Mitmachen</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{{ site.baseurl }}/about">Über Coinium</a>
+      </li>
     </ul>
     <form class="js-algolia__form form-inline my-2 my-lg-0" method="get" action="{{ site.baseurl }}/suche">
       <input type="text" class="form-control mr-sm-2 algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Suchbegriff eingeben..." />
