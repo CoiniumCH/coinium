@@ -32,13 +32,13 @@ nav-links:
   Home: ""
   Wiki: "wiki"
   Mitmachen: "about/mitmachen"
-  Über Conium: "about"
+  Über Coinium: "about"
   
 # --- Footer options --- #
 
 # If the values are empty, they are ignored 
 profile:
-  twitter: ConiumCH
+  twitter: CoiniumCH
 
 # To display link in the footer section
 pretty-url: "coinium.ch"
