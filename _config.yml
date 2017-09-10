@@ -16,7 +16,7 @@ title: Coinium
 keywords: Kryptowährung, Kryptowährungen, Bitcoin, Etherum, Litecoin, Cryptocurrency
 
 # Short description of your site
-desc: Die Coinommunity
+desc: Die schweizer Krypto-Informationsplattform
 
 feed:
   path: atom.xml
@@ -31,17 +31,14 @@ avatar: "/img/avatar.jpg"
 nav-links:
   Home: ""
   Wiki: "wiki"
+  Mitmachen: "about/mitmachen"
+  Über Coinium: "about"
   
 # --- Footer options --- #
 
 # If the values are empty, they are ignored 
 profile:
-  email: Your-Email
-  facebook: your-fb-id
-  github: your-github-id 
-  twitter: your-twitter-id
-  linkedin: your-linkedin-id
-  stackoverflow: your-stackoverflow-id
+  twitter: CoiniumCH
 
 # To display link in the footer section
 pretty-url: "coinium.ch"
@@ -51,16 +48,14 @@ pretty-url: "coinium.ch"
 # Your Disqus profile (shortname) settings
 disqus: "coinium"
 
-# Google Analytics Settings
-google_analytics: "Your-GA-Id"
-
 # Set these options as you need (For more information, check Jekyll's site)
-timezone: "Europe/Berlin"
+timezone: "Europe/Zurich"
 markdown: kramdown
-#highlighter: rouge
+highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
 permalink: /blog/:title
 paginate: 5
 
@@ -110,8 +105,8 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - README.md
+  - LICENSE.md
   - assets
   - node_modules
   - vendor
