@@ -1,5 +1,5 @@
 ---
-title: Coinium Wiki
+title: Wiki
 layout: wiki
 ---
 
@@ -12,7 +12,7 @@ Wir wünschen dir viel Spass beim Lesen.
         <strong>Häufig gestellte Fragen</strong>
         <ul>
             <li>
-                <a href="glossar/wallet.html">Was ist ein Wallet?</a>
+                <a href="glossar/wallet/">Was ist ein Wallet?</a>
             </li>
             <li>
                 <a href="faq/was-sind-icos.html">Was sind ICOs?</a>

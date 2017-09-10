@@ -110,8 +110,8 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - README.md
+  - LICENSE.md
   - assets
   - node_modules
   - vendor
