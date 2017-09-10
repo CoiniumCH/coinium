@@ -1,5 +1,6 @@
 ---
-title: Etherum
+title: Ethereum
+cmc-id: ethereum
 symbol: ETH
 creator: Vitalik Buterin, Gavin Wood
 creation_year: 2015
