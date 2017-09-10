@@ -11,18 +11,22 @@ comments: true
 
             {{ content }}
 
-            <ul class="pager blog-pager">
-                {% if page.previous.url %}
-                <li class="previous">
-                    <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top"
-                       title="{{page.previous.title}}">&larr; Vorheriger Beitrag</a>
-                </li>
-                {% endif %} {% if page.next.url %}
-                <li class="next">
-                    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Nächster Beitrag &rarr;</a>
-                </li>
-                {% endif %}
-            </ul>
+            <nav aria-label="Blog Pager">
+                <ul class="pagination">
+                    {% if page.previous.url %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+                           title="{{page.previous.title}}">&larr; Vorheriger Beitrag</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+                           title="{{page.next.title}}">Nächster Beitrag &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
         </article>
 
         {% if page.comments %}
