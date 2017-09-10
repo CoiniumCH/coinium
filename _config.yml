@@ -4,7 +4,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-menus
   - jekyll-assets
-  - bootstrap
+  - algoliasearch-jekyll
 
 url: "https://coinium.ch"
 baseurl: ""
@@ -18,14 +18,31 @@ keywords: Kryptowährung, Kryptowährungen, Bitcoin, Etherum, Litecoin, Cryptocu
 # Short description of your site
 desc: Die schweizer Krypto-Informationsplattform
 
+algolia:
+  application_id: '9CSM7E3ECT'
+  index_name: 'coinium'
+  excluded_files:
+    - index.html
+    - _layouts/*
+    - _includes/*
+    - wiki/glossar.html
+    - wiki/index.md
+    - wiki/waehrungen.html
+    - suche.html
+  settings:
+    attributesToIndex:
+      - title
+      - h1
+      - h2
+      - h3
+      - p
+
+  read_only_api_key: cbf38e4186918edd9ee123a559e989f8
+
 feed:
   path: atom.xml
 
-# --- Navigation bar options --- #
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar.jpg"
+avatar: "/img/apple-touch-icon.png"
 
 # List of links in the navigation bar
 nav-links:

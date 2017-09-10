@@ -13,6 +13,13 @@ var paths = {
         './node_modules/jquery/dist/jquery.js',
         './node_modules/popper.js/dist/umd/popper.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
+        './node_modules/algoliasearch/dist/algoliasearch.js',
+        './node_modules/algoliasearch-helper/dist/algoliasearch.helper.js',
+        './node_modules/hogan.js/dist/hogan-?.?.?.js',
+        './node_modules/moment/min/moment.min.js',
+        './node_modules/moment/locale/de.js',
+        './node_modules/moment/locale/de-at.js',
+        './node_modules/moment/locale/de-ch.js',
         './assets/js/*.js'
     ],
     sass: './assets/scss/*.scss',

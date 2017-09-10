@@ -9,7 +9,7 @@ services:
   - docker
 
 language: ruby
-rvm: 2.3
+rvm: 2.4
 
 before_script:
   - npm install -g gulp@3.9.1

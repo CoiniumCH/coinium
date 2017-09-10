@@ -1,5 +1,6 @@
 ---
 title: Byteball
+cmc-id: byteball
 symbol: GBYTE
 creator:  Anton Churyumov
 creation_year: 2016

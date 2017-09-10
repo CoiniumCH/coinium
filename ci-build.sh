@@ -25,5 +25,22 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
         docker push coinium/coinium
     fi
 
+    if [ "${TRAVIS_BRANCH}" = "master" ]; then
+        export ALGOLIA_INDEX_NAME="coinium"
+        bundle exec jekyll algolia push
+    fi
+
+    if [ "${TRAVIS_BRANCH}" = "develop" ]; then
+        export ALGOLIA_INDEX_NAME="coinium-dev"
+        bundle exec jekyll algolia push
+    fi
+
     curl "https://ci.dini-mueter.net/buildByToken/build?job=deploy.coinium&token=${BUILD_TOKEN}&cause=Container%20build"
+
+    if [ "${TRAVIS_BRANCH}" = "master" ]; then
+        sleep 60
+
+        curl "http://www.google.com/webmasters/sitemaps/ping?sitemap=https://coinium.ch/sitemap.xml"
+        curl "http://www.bing.com/webmaster/ping.aspx?siteMap=https://coinium.ch/sitemap.xml"
+    fi
 fi

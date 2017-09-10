@@ -10,6 +10,8 @@ package-lock.json
 /_assets/fonts/
 .asset-cache/
 
+Gemfile.lock
+
 ### Windows template
 # Windows thumbnail cache files
 Thumbs.db

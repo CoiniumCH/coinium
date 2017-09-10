@@ -1,5 +1,6 @@
 ---
 title: Was sind Bären und Bullen?
+date: '2017-09-07'
 ---
 
 ## Was bedeutet eigentlich der Begriff Bären und Bullen?

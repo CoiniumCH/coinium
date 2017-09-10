@@ -14,6 +14,11 @@ layout: wiki
                     <p>
                         <strong>Symbol:</strong> {{ page.symbol }}
                     </p>
+                    <p>
+                        <strong>Preis USD:</strong> <span class="cointicker" data-id="{{ page.cmc-id }}">???</span><br>
+                        <strong>Preis EUR:</strong> <span class="cointicker" data-id="{{ page.cmc-id }}" data-convert="EUR">???</span><br>
+                        <strong>Preis CHF:</strong> <span class="cointicker" data-id="{{ page.cmc-id }}" data-convert="CHF">???</span>
+                    </p>
                 </p>
             </div>
         </div>

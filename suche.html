@@ -1,0 +1,29 @@
+---
+title: Suche
+---
+<h1>Suche</h1>
+
+<div class="algolia__search-content js-algolia__search-content">
+    <div class="posts algolia__results">Gib einen Suchbegriff ein.</div>
+</div>
+
+<script id="algolia__template" type="text/template">
+    {% raw %}
+    <div class="algolia__result">
+        <a class="algolia__result-link" href="{{ full_url }}#algolia:{{ css_selector }}"><h5>{{{ _highlightResult.title.value }}}</h5></a>
+        {{#posted_at}}
+        <p class="text-muted">
+            <small>Erstellt: {{ posted_at_readable }}</small>
+        </p>
+        {{/posted_at}}
+        <div class="algolia__result-text">{{{ excerpt }}}</div>
+    </div>
+    {% endraw %}
+    <hr />
+</script>
+
+<script id="algolia__template--no-results" type="text/template">
+    <p>
+        Sorry, leider wurde mit diesem Suchbegriff nichts gefunden.
+    </p>
+</script>

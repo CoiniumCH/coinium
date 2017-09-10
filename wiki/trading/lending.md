@@ -1,5 +1,6 @@
 ---
 title: Lending
+date: '2017-09-07'
 ---
 
 Beim Lending handelt es sich um das Verleihen von Kryptowährungen. Börsen wie Bitfinex erlauben es ihren Kunden mit Margin zu handeln. Darunter versteht man, dass man von der Börse einen Kredit erhält, mit dem man Handeln kann.
