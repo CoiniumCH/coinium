@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var del = require('del');
+var gulpCopy = require('gulp-copy');
 
 var paths = {
     scripts: [
@@ -14,7 +15,10 @@ var paths = {
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './assets/js/*.js'
     ],
-    sass: './assets/scss/*.scss'
+    sass: './assets/scss/*.scss',
+    fonts: [
+        './node_modules/font-awesome/fonts/*'
+    ]
 };
 
 gulp.task('clean', function() {
@@ -23,6 +27,12 @@ gulp.task('clean', function() {
         './_assets/js',
         './_assets/css'
     ]);
+});
+
+gulp.task('fonts', function() {
+    return gulp
+        .src(paths.fonts)
+        .pipe(gulpCopy('./_assets/fonts',{ prefix: 3 }));
 });
 
 gulp.task('scripts', ['clean'], function() {
@@ -37,7 +47,10 @@ gulp.task('scripts', ['clean'], function() {
 gulp.task('sass', function () {
     return gulp.src(paths.sass)
         .pipe(sass({
-            includePaths: [ 'node_modules/bootstrap/scss/']
+            includePaths: [
+                'node_modules/bootstrap/scss/',
+                'node_modules/font-awesome/scss/'
+            ]
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -46,10 +59,10 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./_assets/css'));
 });
 
-gulp.task('watch', ['scripts','sass'], function() {
+gulp.task('watch', ['scripts','sass', 'fonts'], function() {
     gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.sass, ['sass']);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['scripts', 'sass']);
+gulp.task('default', ['scripts', 'sass', 'fonts']);

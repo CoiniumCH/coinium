@@ -7,6 +7,7 @@ node_modules/
 package-lock.json
 /_assets/css/
 /_assets/js/
+/_assets/fonts/
 .asset-cache/
 
 ### Windows template

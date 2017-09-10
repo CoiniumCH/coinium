@@ -53,3 +53,11 @@ Diese Webseite benutzt diverse Komponenten und Frameworks:
  * **_includes/wiki_nav.html**: Hier liegt die Wiki-Navigation.
  * **_layouts/wiki_entry.html**: Darstellung eines Wiki-Artikels.
  * **_layouts/waehrung.html**: Darstellung einer Währungsseite.
+ 
+### Blogpost erstellen
+
+ 1. [Repository forken](https://github.com/CoiniumCH/coinium/fork)
+ 2. Im Fork eine neue Datei erstellen: '_posts/JJJJ-MM-DD-titel.md' (z.B. 2017-09-07-geruechte-tether-nicht-gedeckt)
+ 3. Den Inhalt von 'vorlagen/blogpost.md' in diese Datei kopieren und Inhalte ersetzen.
+ 4. Wenn ihr fertig seid, dürft ihr nun einen Pull-Request gegen "CoiniumCH/coinium:master" oder "CoiniumCH/coinium:develop" (Wenn ihr euch nicht sicher seit.) machen.
+ 5. Wir schauen uns den Pull-Request schnellst möglich an und integrieren ihn in den master-Branch und schalten ihn somit online.

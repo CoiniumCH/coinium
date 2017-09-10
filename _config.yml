@@ -116,6 +116,7 @@ exclude:
   - package.json
   - package-lock.json
   - nginx.conf
+  - vorlagen
 
 created-by: Coinium
 creator-url: https://coinium.ch
@@ -126,5 +127,6 @@ assets:
     - "*.png"
     - "css/styles.css"
     - "js/*.js"
+    - "fonts/*"
   sources:
     - "_assets/"
