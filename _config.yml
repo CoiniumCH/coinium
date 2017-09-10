@@ -127,5 +127,6 @@ assets:
     - "*.png"
     - "css/styles.css"
     - "js/*.js"
+    - "fonts/*"
   sources:
     - "_assets/"
