@@ -35,7 +35,7 @@
 {% endif %}
 
 {% if page.fb-img %}
-    <meta property="og:image" content="{{ page.fb-img }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.fb-img }}" />
 {% elsif site.avatar %}
     <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
 {% endif %}
