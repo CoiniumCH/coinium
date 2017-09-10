@@ -12,3 +12,5 @@ tags:
 ---
 
 DEIN BLOG BEITRAG... LOREM IPSUM DOLOR SIT AMET...
+
+<img class="img-thumbnail" src="/url/zum/bild.png">
