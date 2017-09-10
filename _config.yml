@@ -18,6 +18,19 @@ keywords: Kryptowährung, Kryptowährungen, Bitcoin, Etherum, Litecoin, Cryptocu
 # Short description of your site
 desc: Die schweizer Krypto-Informationsplattform
 
+algolia:
+  application_id: '9CSM7E3ECT'
+  index_name: 'coinium-dev'
+  excluded_files:
+    - index.html
+  settings:
+    attributesToIndex:
+      - title
+      - h1
+      - h2
+      - h3
+      - p
+
 feed:
   path: atom.xml
 
