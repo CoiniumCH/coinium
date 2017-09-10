@@ -23,7 +23,7 @@ Unter folgenden Bedingungen:
  
 Die rechtlich gültige Version befindet sich in der [LICENSE.md](https://github.com/CoiniumCH/coinium/blob/master/LICENSE.md)-Datei.
 
-## Disclaimer/Haftungsausschluss
+## Disclaimer, Haftung
 
 Die Meinungen auf dieser Webseite stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
 
