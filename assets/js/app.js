@@ -34,7 +34,7 @@
         }
 
         $.getJSON(url, function( data ) {
-            var price = 0
+            var price = 0;
             if(convert !== undefined) {
                 price = data[0]['price_' + convert.toLowerCase()];
             } else {
@@ -52,29 +52,36 @@
 $(function(config) {
     'use strict';
 
-    var applicationId = config.applicationId;
-    var apiKey = config.apiKey;
-    var indexName = config.indexName;
-
-    var algolia = algoliasearch(applicationId, apiKey);
-    var helper = algoliasearchHelper(algolia, indexName);
-    helper.setQueryParameter('distinct', true);
-    helper.on('result', onResult);
-
-    // Input listening for queries
-    var $searchInput = $('.js-algolia__input');
-    $searchInput.on('keyup', onQueryChange);
-
-    // Content to hide/show when searching
-    var $initialContent = $('.js-algolia__initial-content');
-    var $searchContent = $('.js-algolia__search-content');
-    var $searchContentResults = $searchContent.find('.algolia__results');
-    $searchContentResults.on('click', 'a', onLinkClick);
-    // Rendering templates
-    var templateResult = Hogan.compile($('#algolia__template').html());
-    var templateNoResults = $('#algolia__template--no-results').html();
-
     var lastQuery;
+
+    if($.QueryString["query"] !== undefined
+        && window.location.pathname === '/suche') {
+
+        var applicationId = config.applicationId;
+        var apiKey = config.apiKey;
+        var indexName = config.indexName;
+
+        var algolia = algoliasearch(applicationId, apiKey);
+        var helper = algoliasearchHelper(algolia, indexName);
+        helper.setQueryParameter('distinct', true);
+        helper.on('result', onResult);
+
+        // Content to hide/show when searching
+        var $initialContent = $('.js-algolia__initial-content');
+        var $searchContent = $('.js-algolia__search-content');
+        var $searchContentResults = $searchContent.find('.algolia__results');
+        $searchContentResults.on('click', 'a', onLinkClick);
+
+        // Rendering templates
+        var templateResult = Hogan.compile($('#algolia__template').html());
+        var templateNoResults = $('#algolia__template--no-results').html();
+
+        lastQuery = $.QueryString["query"];
+
+        helper.setQuery(lastQuery).search();
+        showResults();
+        return false;
+    }
 
     // Toggle result page
     function showResults() {
@@ -82,36 +89,6 @@ $(function(config) {
         $initialContent.addClass('algolia__initial-content--hidden');
         $searchContent.addClass('algolia__search-content--active');
 
-    }
-    function hideResults() {
-        $initialContent.removeClass('algolia__initial-content--hidden');
-        $searchContent.removeClass('algolia__search-content--active');
-    }
-
-    $searchInput.trigger('focus');
-
-    if($.QueryString["query"] !== undefined
-        && window.location.pathname === '/suche') {
-
-        $searchInput.val($.QueryString["query"]);
-        $searchInput.triggerHandler('up');
-    }
-
-    // Handle typing query
-    function onQueryChange() {
-        lastQuery = $(this).val();
-
-        if(window.location.pathname !== '/suche') {
-            window.location = '/suche?query=' + lastQuery;
-            return;
-        }
-
-        if (lastQuery.length === 0) {
-            hideResults();
-            return false;
-        }
-        helper.setQuery(lastQuery).search();
-        showResults();
     }
 
     function onResult(data) {
@@ -164,13 +141,4 @@ $(function(config) {
         event.preventDefault();
         return false;
     }
-
-    window.setTimeout(function() {
-        var selector = getAnchorSelector(window.location.hash);
-        if (selector) {
-            scrollPageToSelector(selector);
-        }
-    }, 100);
-
-
 }(window.ALGOLIA_CONFIG));
