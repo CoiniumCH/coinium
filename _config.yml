@@ -23,6 +23,12 @@ algolia:
   index_name: 'coinium'
   excluded_files:
     - index.html
+    - _layouts/*
+    - _includes/*
+    - wiki/glossar.html
+    - wiki/index.md
+    - wiki/waehrungen.html
+    - suche.html
   settings:
     attributesToIndex:
       - title

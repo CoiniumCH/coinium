@@ -1,6 +1,7 @@
 ---
 title: Wallet
 author: Simon Erhardt
+date: '2017-09-07'
 ---
 
 Die Wallet ist vergleichbar mit einem Bankkonto. Es ist der Ort, wo die Guthaben deiner Cryptocurrency liegen.
