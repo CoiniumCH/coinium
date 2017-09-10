@@ -55,6 +55,7 @@ Diese Webseite benutzt diverse Komponenten und Frameworks:
  * **img**: Hier werden Bilder abgelegt.
  * **_waehrung**: In diesem Verzeichnisse werden neue Währungen angelegt.
  * **_glossar**: Hier können Glossareinträge abgelegt werden.
+ * **_posts**: Hier kommen Blogposts hin, bitte beachte das Dateiformat.
  
 ### Besondere Templates
  * **_includes/nav.html**: Hauptnavigation
