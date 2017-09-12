@@ -15,7 +15,10 @@ Wir wünschen dir viel Spass beim Lesen.
                 <a href="/glossar/wallet/">Was ist ein Wallet?</a>
             </li>
             <li>
-                <a href="/glossar/proof-of-work/">Was ist ein Proof-of-Work?</a>
+                <a href="/glossar/proof-of-work/">Was ist Proof-of-Work?</a>
+            </li>
+            <li>
+                <a href="/glossar/proof-of-stake/">Was ist Proof-of-Stake?</a>
             </li>
             <li>
                 <a href="faq/was-sind-icos.html">Was sind ICOs?</a>

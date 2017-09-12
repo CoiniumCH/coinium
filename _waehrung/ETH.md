@@ -4,6 +4,7 @@ cmc-id: ethereum
 symbol: ETH
 creator: Vitalik Buterin, Gavin Wood
 creation_year: 2015
+confirmation: PoW
 ---
 Beim Ethereum handelt es sich um ein verteiltes System, welches Smart Contracts ausführen kann. Es benutzt eine eigene öffentliche Block Chain. Ethereum stellt Ether als Zahlungsmittel bereit, mit dem die Teilnehmer Rechenleistung in diesem Netzwerk kaufen können. Smart Contracts werden in einer eigenen Programmiersprache, namens Solidity, geschrieben.
 
