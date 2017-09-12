@@ -25,14 +25,55 @@ Sämtliche Änderungen werden automatisch von [Travis CI](https://travis-ci.org)
 ### Vorraussetzung/Abhängigkeiten
  * Ruby 2.3
  * Nodejs 6 und NPM
- * Gulp (npm install -g gulp)
+ * Gulp
 
-### Vorbereitung Entwicklungsumgebung
- * `npm install # NodeJS Abhängigkeiten installieren`
- * `bundle install # Ruby Abhängikeiten installieren`
- * `gulp watch # JavaScript und Styles builden`
- * `bundle exec jekyll serve # Jekyll Server starten`
- * Browser öffnen und nach [localhost:4000](http://localhost:4000) navigieren
+### Entwicklungsumgebung
+
+#### Entwicklungs-Stack unter Ubuntu installieren
+
+```
+# NodeJS 6.x installieren
+$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+$ sudo apt install nodejs
+
+# Gulp installieren
+$ sudo npm install -g gulp@3.9.1
+
+# RVM installieren
+$ gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+$ curl -sSL https://get.rvm.io | bash -s stable
+$ source /home/cabox/.rvm/scripts/rvm
+
+# Ruby 2.4 installieren
+$ rvm install 2.4
+
+# Bundler installieren
+$ gem install bundler
+```
+
+Der Entwicklungsstack ist nun installiert.
+
+#### Vorbereitung Entwicklungsumgebung
+
+```
+# NodeJS Abhängigkeiten installieren
+$ npm install
+
+# Ruby Abhängikeiten installieren
+$ bundle install
+```
+
+### Builden der Webseite
+
+```
+# Styles builden
+$ gulp
+
+# Entwicklungs-Webserver starten
+$ bundle exec jekyll serve
+```
+
+Die Webseite kann nun unter [localhost:4000](http://localhost:4000) erreicht werden.
  
 ### Komponenten
 
