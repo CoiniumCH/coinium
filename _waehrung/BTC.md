@@ -4,6 +4,7 @@ symbol: BTC
 creator: Satoshi Nakamoto
 creation_year: 2007
 cmc-id: bitcoin
+confirmation: PoW
 ---
 Der Bitcoin ist die älteste aller Digitalwährungen und wird auch als das digitale Gold bezeichnet. Sie wurde im Jahr 2007 von Satoshi Nakamoto erfunden.
 

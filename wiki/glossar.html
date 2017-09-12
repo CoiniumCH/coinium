@@ -6,7 +6,8 @@ layout: wiki
 <h1>Begriffsübersicht</h1>
 
 <ul>
-{% for glossar in site.glossar %}
+{% assign glossars = site.glossar | sort: "title" %}
+{% for glossar in glossars %}
     <li>
         <a href="{{ glossar.url }}">{{ glossar.title }}</a>
     </li>

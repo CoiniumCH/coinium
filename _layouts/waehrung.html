@@ -14,6 +14,13 @@ layout: wiki
                     <p>
                         <strong>Symbol:</strong> {{ page.symbol }}
                     </p>
+                    {% if page.confirmation %}
+                    <p>
+                      {% if page.confirmation == "PoW" %}
+                      <strong>Bestätigungen:</strong> <a href="/glossar/proof-of-work/">PoW</a>
+                      {% endif %}
+                    </p>
+                    {% endif %}
                     <p>
                         <strong>Preis USD:</strong> <span class="cointicker" data-id="{{ page.cmc-id }}">???</span><br>
                         <strong>Preis EUR:</strong> <span class="cointicker" data-id="{{ page.cmc-id }}" data-convert="EUR">???</span><br>
