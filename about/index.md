@@ -25,8 +25,7 @@ Die rechtlich gültige Version befindet sich in der [LICENSE.md](https://github.
 
 ## Disclaimer, Haftung
 
-Die Meinungen auf dieser Webseite stellen die persönliche Sicht des jeweiligen Autors dar. Sie stellen keine Handlungsempfehlungen dar.
-
+ * Die Meinungen auf dieser Webseite stellen die persönliche Sicht des jeweiligen Autors dar. Sie sind keine Handlungsempfehlungen.
  * Wir übernehmen keinerlei Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der angebotenen Informationen.
  * Diese Webseite enthält Links zu anderen Webseiten, die nicht zum Angebot von Coinium.ch gehören. Wir sind weder für den Inhalt dieser Seiten verantwortlich, noch billigen, unterstützen oder bestätigen wie die Inhalte, die auf externen Seiten oder in darin aufgeführten gelinkten Adressen enthalten sind.
  * Wir haften in keinem Fall für allfällige direkte oder indirekte Schäden, die aufgrund des Gebrauchs, Informationen und Material aus dieser Webseite oder durch den Zugriff über Links auf andere Webseiten entstehen. Wir übernehmen keine Gewähr, dass Informationen, Software, Dokumente oder andere Angaben, welche über eine dieser Webseiten zugänglich sind, frei von Viren oder anderen schädlichen Komponenten sind.
