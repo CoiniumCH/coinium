@@ -4,9 +4,17 @@ layout: wiki
 <article class="waehrung">
     <aside>
         <div class="card">
+            {% if page.logo %}
+            <img class="card-img-top" src="{{ page.logo }}" alt="Logo of the coin">
+            {% endif %}
             <div class="card-body">
-                <h6 class="card-title">Weitere Informationen</h6>
+                <h5 class="card-title">Weitere Informationen</h5>
                 <p class="card-text">
+                    {% if page.website %}
+                    <p>
+                        <strong>Website:</strong> <a rel="nofollow" class="new-window" href="{{ page.website }}">{{ page.website }}</a>
+                    </p>
+                    {% endif %}
                     <p>
                         <strong>Startjahr:</strong> {{ page.creation_year }}<br>
                         <strong>Erfinder:</strong> {{ page.creator }}
