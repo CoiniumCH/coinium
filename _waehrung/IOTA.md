@@ -2,6 +2,8 @@
 title: Iota
 symbol: IOTA
 cmc-id: iota
+creator: Serguei Popov, Dominik Schiener
+creation_year: 2016
 ---
 Iota ist eine Währung der dritten Generation, welche keine Block Chain mehr kennt. Stattdessen landen die Transaktionen, welche auch nicht mehr in Blöcke gegliedert sind, in einer Tangle. Iota soll vor allem für den „Internet of Things“ Bereich eingesetzt werden.
 
