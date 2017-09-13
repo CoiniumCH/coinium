@@ -6,7 +6,7 @@
         'baseurl': '{{ site.baseurl }}'
     }
 </script>
-<script src="{{ site.baseurl }}/assets/js/app.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/app.min.js?{{ site.data['hash'] }}"></script>
 {% if site.url == "https://coinium.ch" %}
 <script>
     // Google Analytics Tracking code
