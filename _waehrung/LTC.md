@@ -5,6 +5,8 @@ cmc-id: litecoin
 confirmation: PoW
 creator: Charlie Lee
 creation_year: 2011
+logo: /img/litecoin.png
+website: https://litecoin.org
 ---
 Litecoin ist eine frühe Fork von [Bitcoin](/waehrung/btc), welche von Charlie Lee entwickelt wurde. Er bemängelte die lange Blockzeit von 10 Minuten und Hashverfahren bei Bitcoin und andere Dinge, weshalb er einen Fork entwickelte.
 

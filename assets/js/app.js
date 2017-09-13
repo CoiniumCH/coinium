@@ -16,13 +16,13 @@
         }
 
         return params;
-    })(window.location.search.substr(1).split('&'))
+    })(window.location.search.substr(1).split('&'));
 })(jQuery);
 
 (function($) {
     'use strict';
 
-    $("span.cointicker").each(function( index ) {
+    $("span.cointicker").each(function(index) {
         var _this = this;
 
         var id = $(this).data('id');
@@ -46,6 +46,17 @@
             $(_this).text(price);
         });
     });
+
+    $("a.new-window").each(function() {
+        var _this = this;
+
+        $(this).on('click', function(e){
+            e.preventDefault();
+            var url = $(_this).attr('href');
+            console.log(url);
+            window.open(url, '_blank');
+        });
+    })
 })(jQuery);
 
 // Init the search box

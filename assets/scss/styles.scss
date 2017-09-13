@@ -39,6 +39,15 @@ h3, h4, h5 {
     margin-left: 15px;
     margin-top: -10px;
     margin-bottom: 15px;
+
+    img.card-img-top {
+      width: auto;
+      height: auto;
+      max-height: 150px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
   }
 }
 

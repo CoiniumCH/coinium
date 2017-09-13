@@ -4,6 +4,8 @@ cmc-id: byteball
 symbol: GBYTE
 creator: Anton Churyumov
 creation_year: 2016
+logo: /img/byteball.png
+website: https://byteball.org
 ---
 Byteball ist wie Iota eine Kryptowährungs-Netzwerk der dritten Generation, ohne Block Chain. Byteball verwendet die Währung „Bytes“. Sie verwendet einen gerichteten azyklischen Graphen zum Speichern der Transaktionen. Sie wurde von Anton Churyumov in einem Whitepaper beschrieben. Ende Dezember 2016 wurde mit der Entwicklung begonnen.
 
