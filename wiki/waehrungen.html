@@ -9,7 +9,8 @@ layout: wiki
 <p>Hier findest du eine Übersicht vieler Kryptowährungen. Informationen zu normalem Geld findest du unter dem Begriff <a href="/glossar/fiat-geld/">Fiat-Geld</a>.</p>
 
 <ul>
-{% for waehrung in site.waehrung %}
+{% assign waehrungen = site.waehrung | sort: "title" %}
+{% for waehrung in waehrungen %}
     <li>
         <a href="{{ waehrung.url }}">{{ waehrung.symbol }} - {{ waehrung.title }}</a>
     </li>
