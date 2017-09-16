@@ -8,6 +8,8 @@ title: Mitmachen
 
 Coinium ist ein Open-Source Projekt und wir freuen uns jederzeit über Pull-Requests. Sämtlicher Code, der zum Erstellen dieser Webseite notwendig ist, kann auf [Github](https://github.com/CoiniumCH/coinium) gefunden werden. 
 
+Wenn dir das ganze zu kompliziert ist oder du nicht verstehst wie es geht, darfst du uns auch gerne deinen Beitrag per [Kontaktformular](/anfrage/) senden.
+
 Wenn du bei diesem Projekt mitmachst, erklärst du dich damit einverstanden, dass deine Arbeit unter die **Creative Commons 4.0 Attribution Share-Alike International** gestellt wird. Arbeit, welche dieser Lizenz nicht genügt können wir leider nicht annehmen.
 
 ## Lizenz
