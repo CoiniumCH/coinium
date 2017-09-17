@@ -1,6 +1,6 @@
 ---
 title: Dash
-symbol: dash
+symbol: DASH
 cmc-id: dash
 confirmation: PoW
 creator: 
