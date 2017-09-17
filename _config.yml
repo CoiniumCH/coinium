@@ -102,8 +102,6 @@ defaults:
       type: waehrung
     values:
       layout: waehrung
-      creator: Unbekannt
-      creation_year: Unbekannt
   -
     scope:
       path: ""

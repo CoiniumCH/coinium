@@ -3,7 +3,6 @@ title: Dash
 symbol: DASH
 cmc-id: dash
 confirmation: PoW
-creator: 
 creation_year: 2014
 logo: /img/dash.png
 website: https://www.dash.org

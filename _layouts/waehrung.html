@@ -16,8 +16,12 @@ layout: wiki
                     </p>
                     {% endif %}
                     <p>
+                        {% if page.creation_year %}
                         <strong>Startjahr:</strong> {{ page.creation_year }}<br>
+                        {% endif %}
+                        {% if page.creator %}
                         <strong>Erfinder:</strong> {{ page.creator }}
+                        {% endif %}
                     </p>
                     <p>
                         <strong>Symbol:</strong> {{ page.symbol }}

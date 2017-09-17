@@ -3,7 +3,6 @@ title: Bitcoin Cash
 symbol: BCH
 cmc-id: bitcoin-cash
 confirmation: PoW
-creator:
 creation_year: 2017
 logo: /img/bitcoincash.jpg
 website: https://www.bitcoincash.org
