@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h1>Anfrage</h1>
+
+<p>Hier hast du die Möglichkeit uns direkt eine Anfrage zu schicken. Wir melden uns schnellstmöglich bei dir.</p>
+
+<form action="https://formspree.io/anfrage@coinium.ch"
+      method="POST">
+    <div class="form-group">
+        <label for="replyto">E-Mail Adresse</label>
+        <input type="email" name="email" class="form-control" id="replyto" aria-describedby="emailHelp" placeholder="E-Mailadresse eingeben...">
+        <small id="emailHelp" class="form-text text-muted">Wir werden deine E-Mailadresse nicht weitergeben.</small>
+    </div>
+    <div class="form-group">
+        <label for="betreff">Betreff</label>
+        <input type="text" name="_subject" class="form-control" id="betreff" placeholder="Betreff eingeben...">
+    </div>
+    <div class="form-group">
+        <label for="anfrage">Deine Anfrage</label>
+        <textarea class="form-control" id="anfrage" name="anfrage" rows="3"></textarea>
+    </div>
+    <div class="form-group" style="display:none;">
+        <label for="gotcha">Hier nichts eingeben</label>
+        <input type="text" class="form-control" id="gotcha" name="_gotcha">
+    </div>
+    <input type="hidden" name="_language" value="de" />
+    <input type="hidden" name="_format" value="plain" />
+    <input type="hidden" name="_next" value="https://coinium.ch/" />
+    <input type="submit" name="send" class="btn btn-success btn-lg" value="Absenden">
+</form>

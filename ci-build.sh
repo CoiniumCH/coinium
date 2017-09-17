@@ -18,6 +18,8 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     docker login -u=${DOCKER_USERNAME} -p=${DOCKER_PASSWORD}
 
 	if [ "${TRAVIS_BRANCH}" != "master" ]; then
+	    TRAVIS_BRANCH=${TRAVIS_BRANCH//\//_}
+
         # re-tag docker image
         docker tag coinium/coinium coinium/coinium:${TRAVIS_BRANCH}
         docker push coinium/coinium:${TRAVIS_BRANCH}

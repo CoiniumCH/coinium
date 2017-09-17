@@ -8,7 +8,7 @@ title: Über
 
 Coinium ist eine Informationsplattform für Kryptowährungen. Coinium wird von Kryptoenthusiasten aus der Schweiz betrieben.
 
-Wir möchten möglichst unabhängige, viele und einfach zu verstehende Informationen über Kryptowährungen zusammentragen.
+Wir möchten möglichst unabhängige, viele und einfach zu verstehende Informationen über Kryptowährungen zusammentragen. Bei Fragen oder Anmerkungen darfst du uns gerne [kontaktieren](/anfrage/).
 
 ## Lizenz
 
@@ -30,4 +30,3 @@ Die rechtlich gültige Version befindet sich in der [LICENSE.md](https://github.
  * Diese Webseite enthält Links zu anderen Webseiten, die nicht zum Angebot von Coinium.ch gehören. Wir sind weder für den Inhalt dieser Seiten verantwortlich, noch billigen, unterstützen oder bestätigen wie die Inhalte, die auf externen Seiten oder in darin aufgeführten gelinkten Adressen enthalten sind.
  * Wir haften in keinem Fall für allfällige direkte oder indirekte Schäden, die aufgrund des Gebrauchs, Informationen und Material aus dieser Webseite oder durch den Zugriff über Links auf andere Webseiten entstehen. Wir übernehmen keine Gewähr, dass Informationen, Software, Dokumente oder andere Angaben, welche über eine dieser Webseiten zugänglich sind, frei von Viren oder anderen schädlichen Komponenten sind.
  * Die Informationen und Bestimmungen auf dieser Webseite können jederzeit geändert werden. Der Benutzer ist deshalb angehalten diese Bestimmungen regelmässig zu lesen.
-
