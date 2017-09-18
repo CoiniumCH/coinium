@@ -72,10 +72,13 @@ paginate: 5
 collections:
   waehrung:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
   glossar:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -106,6 +109,12 @@ defaults:
     scope:
       path: ""
       type: glossar
+    values:
+      layout: "wiki_entry"
+  -
+    scope:
+      path: ""
+      type: tutorials
     values:
       layout: "wiki_entry"
 
