@@ -17,6 +17,23 @@ h3, h4, h5 {
 
 .card {
   margin: 10px 0;
+
+  .card-img-top {
+    padding: 10px;
+  }
+
+  a.currency-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    .card-img-top {
+      width: auto;
+      height: 65px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .posts-list {
@@ -46,7 +63,6 @@ h3, h4, h5 {
       max-height: 150px;
       max-width: 100%;
       margin: 0 auto;
-      padding: 10px;
     }
   }
 }
