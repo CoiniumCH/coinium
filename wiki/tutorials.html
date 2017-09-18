@@ -1,0 +1,16 @@
+---
+title: Anleitungen
+desc: Eine Übersicht über unsere Anleitungen.
+layout: wiki
+---
+
+<h1>Anleitungen</h1>
+
+<ul>
+{% assign tutorials = site.tutorials | sort: "title" %}
+{% for tutorial in tutorials %}
+    <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
+    </li>
+{% endfor %}
+</ul>
