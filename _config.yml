@@ -107,7 +107,7 @@ defaults:
       path: ""
       type: waehrung
     values:
-      layout: waehrung
+      layout: "waehrung"
   -
     scope:
       path: ""
