@@ -28,6 +28,7 @@ Ein Paper-Wallet ist ein physikalisches Dokument, meist aus Papier, auf dem der 
 2. Walletgenerator.net fragt dich nach einer zufälligen Mausbewegung im Browserfenster. Bewege die Maus wild im Fenster umher, bis mehrere Punkte erscheinen, mache weiter bis der Zähler der Seite auf 0 steht.
 <img class="img-thumbnail" src="/img/tutorials/paper-wallet-erstellen/1.png">
 3. Nun hast du deinen öffentlichen und privaten Schlüssel generiert. Den privaten Schlüssel nicht scannen!
+
 4. Auf der Seite den Reiter "Paper Wallet" anklicken.
 <img class="img-thumbnail" src="/img/tutorials/paper-wallet-erstellen/2.png">
 5. Du kannst das Paper-Wallet nun mit einem Klick auf "Print" ausdrucken. Du kannst es alternativ auch als PDF speichern (*nicht empfohlen*).
