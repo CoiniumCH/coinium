@@ -66,10 +66,13 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-permalink: /blog/:title
+paginate_path: "/blog/page:num/"
 paginate: 5
 
 collections:
+  posts:
+    output: true
+    permalink: /blog/:name/
   waehrung:
     output: true
     permalink: /:collection/:name/
