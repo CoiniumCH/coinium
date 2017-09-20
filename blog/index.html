@@ -1,0 +1,53 @@
+--- 
+layout: default
+---
+
+<div class="row">
+    <div class="col-sm-12 col-md-9">
+        <div class="posts-list">
+            <h1>Aktuelle Blogposts</h1>
+            {% for post in paginator.posts %}
+            <article>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h4 class="postTitle">{{ post.title }}</h4>
+                </a>
+
+                <p class="text-muted">
+                    <small>Erstellt am {{ post.date | date: "%d.%m.%Y" }} von {{ post.author }}.</small>
+                </p>
+
+                <div>
+                    {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+                    <br/><br/>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="readMoreLink">&raquo; [Weiterlesen]</a>
+                </div>
+
+                <hr />
+            </article>
+            {% endfor %}
+
+            {% if paginator.total_pages > 1 %}
+            <ul class="pager main-pager">
+                {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Neuere Posts</a>
+                </li>
+                {% endif %}
+                {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Ältere Posts &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+        <noscript>
+            <p>Mit JavaScript wird hier die Twitter-Timeline angezeigt.</p>
+        </noscript>
+        <a class="twitter-timeline" href="https://twitter.com/coiniumCH">Tweets by coiniumCH</a>
+    </div>
+</div>
+
+

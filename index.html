@@ -1,61 +1,101 @@
---- 
-layout: default
 ---
-
-<h1>Coinium.ch <small>Die Coinommunity</small></h1>
+title: Wiki
+layout: wiki
+---
+<h1>Herzlich Willkommen bei Coinium</h1>
 
 <p>Coinium ist ein schweizer Projekt, dass möglichst viele und leicht verständliche Informationen zu Bitcoin und alternativen Kryptowährungen zusammen trägt.</p>
-
 <p>Wir sind derzeit noch am Aufbauen und freuen uns jederzeit über neue <a href="/about/mitmachen">Beiträge</a>.</p>
 
-<hr />
-
 <div class="row">
-    <div class="col-sm-12 col-md-9">
-        <div class="posts-list">
-            <h3>Aktuelle Blogposts:</h3>
-            {% for post in paginator.posts %}
-            <article>
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <h4 class="postTitle">{{ post.title }}</h4>
-                </a>
+    <div class="col-sm-12 col-md-4">
+        <strong>Häufig gestellte Fragen</strong>
+        <ul>
+            <li>
+                <a href="/glossar/wallet/">Was ist ein Wallet?</a>
+            </li>
+            <li>
+                <a href="/glossar/proof-of-work/">Was ist Proof-of-Work?</a>
+            </li>
+            <li>
+                <a href="/glossar/proof-of-stake/">Was ist Proof-of-Stake?</a>
+            </li>
+            <li>
+                <a href="faq/was-sind-icos.html">Was sind ICOs?</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <strong>Trading</strong>
+        <ul>
+            <li>
+                <a href="trading/baeren-und-bullen.html">Von Bären und Bullen</a>
+            </li>
+            <li>
+                <a href="trading/lending.html">Lending</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <strong>Community</strong>
+        <ul>
+            <li>
+                <a href="https://slack.coinium.ch">Slack-Chat</a>
+            </li>
+            <li>
+                <a href="https://t.me/coinium_ch">Telegram-Chat (Schweizer-Deutsch)</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<hr>
 
-                <p class="text-muted">
-                    <small>Erstellt am {{ post.date | date: "%d.%m.%Y" }} von {{ post.author }}.</small>
-                </p>
-
-                <div>
-                    {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-                    <br/><br/>
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="readMoreLink">&raquo; [Weiterlesen]</a>
-                </div>
-
-                <hr />
-            </article>
-            {% endfor %}
-
-            {% if paginator.total_pages > 1 %}
-            <ul class="pager main-pager">
-                {% if paginator.previous_page %}
-                <li class="previous">
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Neuere Posts</a>
-                </li>
-                {% endif %}
-                {% if paginator.next_page %}
-                <li class="next">
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Ältere Posts &rarr;</a>
-                </li>
-                {% endif %}
-            </ul>
-            {% endif %}
+<h3>Währungen</h3>
+<div class="row">
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <a class="currency-link" href="/waehrung/btc/">
+                <img class="card-img-top" src="/img/bitcoin.png" alt="Bitcoin Logo">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Der Bitcoin entstand 2007 und ist die erste erfolgreiche Kryptowährung.</p>
+                <a href="/waehrung/btc/">Mehr lesen</a>
+            </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-3">
-        <noscript>
-            <p>Mit JavaScript wird hier die Twitter-Timeline angezeigt.</p>
-        </noscript>
-        <a class="twitter-timeline" href="https://twitter.com/coiniumCH">Tweets by coiniumCH</a>
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <a class="currency-link" href="/waehrung/eth/">
+                <img class="card-img-top" src="/img/ethereum.png" alt="Ethereum Logo">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Der Ethereum wurde 2015 erfunden und erlaubt Smart-Contracts und Tokens.</p>
+                <a href="/waehrung/eth/">Mehr lesen</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <a class="currency-link" href="/waehrung/iota/">
+                <img class="card-img-top" src="/img/iota.png" alt="IOTA Logo">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Der IOTA wurde im Jahr 2016 entwickelt und soll den IoT-Bereich aufmischen.</p>
+                <a href="/waehrung/iota/">Mehr lesen</a>
+            </div>
+        </div>
     </div>
 </div>
 
+<p><a href="/wiki/waehrungen.html">Weitere Währungen</a></p>
+<hr>
 
+<h3>Anleitungen</h3>
+<ul>
+    {% assign tutorials = site.tutorials | sort: "date" %}
+    {% for tutorial in tutorials %}
+    <li>
+        <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
